@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace WebService_Consumer
 {
@@ -10,6 +6,14 @@ namespace WebService_Consumer
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Fibonacci(10)");
+
+            Demo.DemoSoapClient webService = new Demo.DemoSoapClient();
+
+            Console.WriteLine(webService.Fibonacci(10));
+
+            Console.Write("\nPress any key to continue... ");
+            Console.ReadLine();
         }
     }
 }
